@@ -2,7 +2,8 @@
   "name": "store_js",
   "version": "1.0.0",
   "description": "store",
-  "main": "index.html",
+  "main": "index.js",
+  "homepage": ".",
   "scripts": {
     "start": "webpack-dev-server",
     "build": "webpack"
@@ -11,17 +12,18 @@
     "type": "git",
     "url": "git+https://github.com/Barnicle/store_js.git"
   },
-  "author": "",
+  "author": "Evgenii Galimov",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Barnicle/store_js/issues"
   },
-  "homepage": ".",
   "dependencies": {
     "webpack": "^4.41.5",
     "webpack-cli": "^3.3.10"
   },
   "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.4",
     "babel-loader": "^8.0.6",
     "css-loader": "^3.4.2",
     "file-loader": "^5.0.2",

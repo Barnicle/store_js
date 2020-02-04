@@ -3,14 +3,14 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   mode: "development",
-  entry: "./index.js",
+  entry: "./src/index.js",
   output: {
     filename: "bundle.js",
     path: path.resolve(__dirname, "build"),
     publicPath: "/"
   },
   devServer: {
-    contentBase: "./build",
+    contentBase: "/build",
     port: 3000,
     hot: true,
     open: true,
@@ -19,11 +19,17 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: "./index.html"
+      filename: "index.html",
+      template: "index.html"
     })
   ],
   module: {
     rules: [
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        loader: "babel-loader"
+      },
       {
         test: /\.(png|jpg|svg)$/,
         exclude: /node_modules/,
@@ -33,19 +39,15 @@ module.exports = {
             options: {
               name: "[name][img].[ext]",
               context: path.resolve(__dirname, "src/images/"),
-              outputPath: "./build",
+              outputPath: "/",
               useRelativePaths: true
             }
-          },
-          { loader: "url-loader" }
+          }
         ]
       },
       {
-        test: /\.css$/i,
-        use: [{ loader: "style-loader" }, { loader: "css-loader" }],
-        options: {
-          url: true
-        }
+        test: /\.(css)$/,
+        use: [{ loader: "style-loader" }, { loader: "css-loader" }]
       }
     ]
   }
