@@ -5,62 +5,94 @@
     "image": "https://d37kg2ecsrm74.cloudfront.net/web/ikea4/images/382/0238233_PE377690_S5.jpg",
     "descr": "Супер стул",
     "price": 300,
-    "available": true
+    "available": false
   },
   {
-    "id": 1,
+    "id": 2,
     "title": "Стул 1",
     "image": "https://d37kg2ecsrm74.cloudfront.net/web/ikea4/images/382/0238233_PE377690_S5.jpg",
     "descr": "Супер стул",
     "price": 300,
-    "available": true
+    "available": false
   },
   {
-    "id": 1,
+    "id": 3,
     "title": "Стул 1",
     "image": "https://d37kg2ecsrm74.cloudfront.net/web/ikea4/images/382/0238233_PE377690_S5.jpg",
     "descr": "Супер стул",
     "price": 300,
-    "available": true
+    "available": false
   },
   {
-    "id": 1,
+    "id": 4,
     "title": "Стул 1",
     "image": "https://d37kg2ecsrm74.cloudfront.net/web/ikea4/images/382/0238233_PE377690_S5.jpg",
     "descr": "Супер стул",
     "price": 300,
-    "available": true
+    "available": false
   },
   {
-    "id": 1,
+    "id": 5,
     "title": "Стул 1",
     "image": "https://d37kg2ecsrm74.cloudfront.net/web/ikea4/images/382/0238233_PE377690_S5.jpg",
     "descr": "Супер стул",
     "price": 300,
-    "available": true
+    "available": false
   },
   {
-    "id": 1,
+    "id": 6,
     "title": "Стул 1",
     "image": "https://d37kg2ecsrm74.cloudfront.net/web/ikea4/images/382/0238233_PE377690_S5.jpg",
     "descr": "Супер стул",
     "price": 300,
-    "available": true
+    "available": false
   },
   {
-    "id": 1,
+    "id": 7,
     "title": "Стул 1",
     "image": "https://d37kg2ecsrm74.cloudfront.net/web/ikea4/images/382/0238233_PE377690_S5.jpg",
     "descr": "Супер стул",
     "price": 300,
-    "available": true
+    "available": false
   },
   {
-    "id": 1,
+    "id": 8,
     "title": "Стул 1",
     "image": "https://d37kg2ecsrm74.cloudfront.net/web/ikea4/images/382/0238233_PE377690_S5.jpg",
     "descr": "Супер стул",
     "price": 300,
-    "available": true
+    "available": false
+  },
+  {
+    "id": 9,
+    "title": "Стул 1",
+    "image": "https://d37kg2ecsrm74.cloudfront.net/web/ikea4/images/382/0238233_PE377690_S5.jpg",
+    "descr": "Супер стул",
+    "price": 300,
+    "available": false
+  },
+  {
+    "id": 10,
+    "title": "Стул 1",
+    "image": "https://d37kg2ecsrm74.cloudfront.net/web/ikea4/images/382/0238233_PE377690_S5.jpg",
+    "descr": "Супер стул",
+    "price": 300,
+    "available": false
+  },
+  {
+    "id": 11,
+    "title": "Стул 1",
+    "image": "https://d37kg2ecsrm74.cloudfront.net/web/ikea4/images/382/0238233_PE377690_S5.jpg",
+    "descr": "Супер стул",
+    "price": 310,
+    "available": false
+  },
+  {
+    "id": 12,
+    "title": "Стул 1",
+    "image": "https://d37kg2ecsrm74.cloudfront.net/web/ikea4/images/382/0238233_PE377690_S5.jpg",
+    "descr": "Супер стул",
+    "price": 30,
+    "available": false
   }
 ]

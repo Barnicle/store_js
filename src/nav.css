@@ -1,0 +1,17 @@
+.search {
+  max-width: 300px;
+}
+.form-inline {
+  background: white;
+}
+.filter-container {
+  margin-bottom: 40px;
+}
+.filter-container button,
+input {
+  margin-right: 10px;
+}
+.filter-available,
+.filter-price {
+  text-transform: uppercase;
+}

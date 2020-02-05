@@ -1,5 +1,6 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const webpack = require("webpack");
 
 module.exports = {
   mode: "development",
@@ -19,8 +20,10 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      filename: "index.html",
-      template: "index.html"
+      template: "./index.html",
+      inject: false,
+      appMountId: "root",
+      filename: "index.html"
     })
   ],
   module: {
@@ -31,7 +34,7 @@ module.exports = {
         loader: "babel-loader"
       },
       {
-        test: /\.(png|jpg|svg)$/,
+        test: /\.(jpg)$/,
         exclude: /node_modules/,
         use: [
           {

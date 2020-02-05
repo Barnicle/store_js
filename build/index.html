@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- LINKS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+
+    <title>Store</title>
+  </head>
+  <body class="container-xlg  bg-light" id='root'>
+    <!-- HEADER -->
+    <header class="header">
+      <div>
+        <h1>Логотип</h1>
+
+        <div>
+          <span>1</span>
+          <button>Корзина</button>
+        </div>
+      </div>
+      <div class="filter-container d-flex flex-row justify-content-center">
+        <nav class=" navbar navbar-light bg-light">
+          <form class="form-inline">
+            <input
+              class="form-control mr-sm-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">Search</button>
+            <button
+              type="button"
+              class="filter-available btn btn-outline-success"
+              data-toggle="button"
+              aria-pressed="false"
+              autocomplete="off"
+            >
+              в наличии
+            </button>
+            <button
+              type="button"
+              class="filter-price btn btn-outline-success"
+              data-toggle="button"
+              aria-pressed="false"
+              autocomplete="off"
+            >
+              Цена
+            </button>
+          </form>
+        </nav>
+      </div>
+    </header>
+    <!-- HEADER -->
+    <!-- MAIN -->
+    <main class="container-lg flex column">
+      <div class="row" id="items_placeholder">
+        <!-- Item -->
+
+        <!-- Item -->
+      </div>
+    </main>
+    <!-- MAIN -->
+
+    </div>
+    <!-- FOOTER -->
+    <footer></footer>
+
+    <!-- FOOTER -->
+  <script type="text/javascript" src="./bundle.js"></script>
+  </body>
+</html>
