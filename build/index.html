@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <!-- LINKS -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -14,65 +15,46 @@
 
     <title>Store</title>
   </head>
-  <body class="container-xlg  bg-light" id='root'>
+  <body class="container-xlg  bg-light" id="root">
     <!-- HEADER -->
     <header class="header">
-      <div>
-        <h1>Логотип</h1>
-
-        <div>
-          <span>1</span>
-          <button>Корзина</button>
+      <div class="navbar d-flex flex-row justify-content-end">
+        <div class="align-items-center">
+          <i class="material-icons">shopping_cart</i>
+          <span>Cart</span>
         </div>
-      </div>
-      <div class="filter-container d-flex flex-row justify-content-center">
-        <nav class=" navbar navbar-light bg-light">
-          <form class="form-inline">
-            <input
-              class="form-control mr-sm-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button class="btn btn-outline-success" type="submit">Search</button>
-            <button
-              type="button"
-              class="filter-available btn btn-outline-success"
-              data-toggle="button"
-              aria-pressed="false"
-              autocomplete="off"
-            >
-              в наличии
-            </button>
-            <button
-              type="button"
-              class="filter-price btn btn-outline-success"
-              data-toggle="button"
-              aria-pressed="false"
-              autocomplete="off"
-            >
-              Цена
-            </button>
-          </form>
-        </nav>
+        <div class="d-flex flex-column justify-content-between"></div>
       </div>
     </header>
-    <!-- HEADER -->
-    <!-- MAIN -->
-    <main class="container-lg flex column">
-      <div class="row" id="items_placeholder">
-        <!-- Item -->
+    <main class="card text-center">
+      <div class="card-header">
+        <ul class="nav nav-tabs card-header-tabs">
+          <li class="nav-item">
+            <a class="nav-link" id="available" href="#">Наличие</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="title_sort" href="#">По названию</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="price_up" href="#">$ ↑</a>
+          </li>
 
-        <!-- Item -->
+          <li class="nav-item">
+            <a class="nav-link " id="price_down" href="#">$ ↓</a>
+          </li>
+        </ul>
+      </div>
+      <div class="card-body">
+        <div class="container-lg flex column">
+          <div class="row" id="items_placeholder"></div>
+        </div>
       </div>
     </main>
-    <!-- MAIN -->
 
-    </div>
     <!-- FOOTER -->
     <footer></footer>
 
     <!-- FOOTER -->
-  <script type="text/javascript" src="./bundle.js"></script>
+    <script type="text/javascript" src="./bundle.js"></script>
   </body>
 </html>

@@ -1,6 +1,3 @@
-.search {
-  max-width: 300px;
-}
 .form-inline {
   background: white;
 }
@@ -14,4 +11,8 @@ input {
 .filter-available,
 .filter-price {
   text-transform: uppercase;
+}
+
+.cart i {
+  margin-right: 10px;
 }

@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <!-- LINKS -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -18,16 +21,7 @@
   <body class="container-xlg  bg-light" id="root">
     <!-- HEADER -->
     <header class="header">
-      <div class="navbar d-flex flex-row justify-content-end">
-        <div class="align-items-center">
-          <i class="material-icons">shopping_cart</i>
-          <span>Cart</span>
-        </div>
-        <div class="d-flex flex-column justify-content-between"></div>
-      </div>
-    </header>
-    <main class="card text-center">
-      <div class="card-header">
+      <div class="card-header row justify-content-between">
         <ul class="nav nav-tabs card-header-tabs">
           <li class="nav-item">
             <a class="nav-link" id="available" href="#">Наличие</a>
@@ -43,7 +37,20 @@
             <a class="nav-link " id="price_down" href="#">$ ↓</a>
           </li>
         </ul>
+
+        <div class="navbar d-flex flex-row" id="cart">
+          <div class="d-flex align-items-center">
+            <span id="cart-items-quantity">1</span>
+            <i class="material-icons">shopping_cart</i>
+            <span>Cart</span>
+          </div>
+          <div class="cart-contain d-flex flex-column justify-content-between">
+            fdfdsfsd
+          </div>
+        </div>
       </div>
+    </header>
+    <main class="card text-center">
       <div class="card-body">
         <div class="container-lg flex column">
           <div class="row" id="items_placeholder"></div>
