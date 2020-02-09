@@ -1,8 +1,7 @@
 export default function CreateElements(data) {
   let newHTML;
   //if items in localstorage parse it
-  if (localStorage.getItem("mykey") != null)
-    newHTML = JSON.parse(localStorage.getItem("myKey"));
+  if (localStorage.getItem("mykey") != null) newHTML = JSON.parse(localStorage.getItem("stage"));
   else
     newHTML = Object.keys(data).map(
       key => `<div
@@ -26,9 +25,7 @@ export default function CreateElements(data) {
               />
             </div>
             <div class="d-flex justify-content-center">
-              <h3 class="item-title card-title" id="title">${
-                data[key].title
-              }</h3>
+              <h3 class="item-title card-title" id="title">${data[key].title}</h3>
             </div>
             <div class="item-desc card-text d-flex justify-content-center" id="descr">
               <p>${data[key].descr}</p>

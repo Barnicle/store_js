@@ -18,16 +18,7 @@
   <body class="container-xlg  bg-light" id="root">
     <!-- HEADER -->
     <header class="header">
-      <div class="navbar d-flex flex-row justify-content-end">
-        <div class="align-items-center">
-          <i class="material-icons">shopping_cart</i>
-          <span>Cart</span>
-        </div>
-        <div class="d-flex flex-column justify-content-between"></div>
-      </div>
-    </header>
-    <main class="card text-center">
-      <div class="card-header">
+      <div class="card-header row justify-content-between">
         <ul class="nav nav-tabs card-header-tabs">
           <li class="nav-item">
             <a class="nav-link" id="available" href="#">Наличие</a>
@@ -43,10 +34,29 @@
             <a class="nav-link " id="price_down" href="#">$ ↓</a>
           </li>
         </ul>
+
+        <div class="navbar d-flex flex-row" id="cart">
+          <div class="d-flex align-items-center">
+            <span id="cart-items-quantity">1</span>
+            <i class="material-icons">shopping_cart</i>
+            <span>Cart</span>
+          </div>
+          <div class="cart-contain d-flex flex-column justify-content-between"></div>
+        </div>
       </div>
+    </header>
+    <main class="card text-center">
       <div class="card-body">
         <div class="container-lg flex column">
-          <div class="row" id="items_placeholder"></div>
+          <div class="row" id="items_placeholder">
+
+          </div>
+          <div>
+            <input type="button" id="first" onclick="firstPAge()" value="first">PREV</input>
+            <input type="button" id="next" onclick="nextPage()" value="next">NEXT</input>
+            <input type="button" id="previous" onclick="previousPage()" value="previous">NEXT</input>
+            <input type="button" id="last" onclick="lastPage()" value="last">NEXT</input>
+            </div>
         </div>
       </div>
     </main>

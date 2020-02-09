@@ -1,0 +1,9 @@
+export const available = document.querySelector("#available");
+export const price_up = document.querySelector("#price_up");
+export const price_down = document.querySelector("#price_down");
+export const title_sort = document.querySelector("#title_sort");
+export const next = document.querySelector("#next");
+export const prev = document.querySelector("#previous");
+export const first = document.querySelector("#first");
+export const last = document.querySelector("#last");
+export const list = document.querySelector("#list");
