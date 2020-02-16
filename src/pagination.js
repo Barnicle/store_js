@@ -1,11 +1,6 @@
 import CreateElements from "./create-elements.js";
-
-import {
-  handleAvailableSort,
-  handlePriceSort,
-  handleTitleSort
-} from './handlers.js';
-
+import { handleAddItem } from "./cart";
+import { handleAvailableSort, handlePriceSort, handleTitleSort } from "./handlers.js";
 class Pagination {
   constructor(list, currentPage, numberPerPage) {
     this.list = list;
@@ -34,20 +29,26 @@ class Pagination {
     this.loadList();
   };
 
-  handlePriceSort = (e) => {
+  handlePriceSort = e => {
     handlePriceSort(e, this.list);
     this.loadList();
-  }
+  };
+
+  handleAddBtn = btns => {
+    for (let i = 0; i < btns.length; i++) btns[i].addEventListener("click", handleAddItem);
+  };
 
   handleAvailableSort = () => {
     handleAvailableSort(this.list);
     this.loadList();
-  }
+  };
+
   handleTitleSort = () => {
     handleTitleSort(this.list);
     this.loadList();
-  }
-  loadList = function () {
+  };
+
+  loadList = function() {
     const begin = (this.currentPage - 1) * this.numberPerPage;
     const end = begin + this.numberPerPage;
     const html = this.list.slice(begin, end);
@@ -56,11 +57,13 @@ class Pagination {
     this.check();
   };
 
-  drawList = (pageList) => {
+  drawList = pageList => {
     document.getElementById("list").innerHTML = "";
     for (let i = 0; i < pageList.length; i++) {
       document.getElementById("list").innerHTML += pageList[i];
     }
+    const btns = document.querySelectorAll(".item-btn");
+    this.handleAddBtn(btns);
   };
 
   check = () => {
@@ -71,9 +74,6 @@ class Pagination {
     document.getElementById("last").disabled =
       this.currentPage == this.numberOfPages ? true : false;
   };
-
-
 }
-
 
 export default Pagination;

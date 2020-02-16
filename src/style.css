@@ -16,7 +16,7 @@ main {
   height: auto;
   border: 1px solid black;
   border-radius: 6px;
-  margin: 20px;
+  margin: 30px;
 }
 
 .item-container:hover {
@@ -29,6 +29,21 @@ main {
 }
 .item-info {
   padding: 0;
+}
+.item-form {
+  margin: 10px;
+}
+.item-form button {
+  width: 100px;
+  margin-left: 5px;
+}
+.item-form span {
+  /* display: none; */
+  background: red;
+  color: white;
+  padding: 5px;
+  border: 1px solid red;
+  border-radius: 7px;
 }
 .item-img {
   width: auto;
@@ -45,19 +60,20 @@ main {
   position: relative;
   border: 1px solid cornflowerblue;
 }
-.cart-btn::after {
-  content: "0";
+/* .cart-btn::after {
+  content: "1";
   position: absolute;
   height: 20px;
   width: 20px;
   top: -15px;
-  left: 95px;
+  left: 97px;
   padding: 5px;
-  text-align: center;
+  text-align: center; 
+  font-size: 9px;
   line-height: 10px;
-  border-radius: 50%;
+  border-radius: 25%;
   background: red;
-}
+} */
 .cart-btn:hover {
   background: red;
 }

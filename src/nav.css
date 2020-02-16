@@ -1,13 +1,16 @@
 .form-inline {
   background: white;
 }
+
 .filter-container {
   margin-bottom: 40px;
 }
+
 .filter-container button,
 input {
   margin-right: 10px;
 }
+
 .filter-available,
 .filter-price {
   text-transform: uppercase;
@@ -15,4 +18,44 @@ input {
 
 .cart i {
   margin-right: 10px;
+}
+
+.cart-contain {
+  position: relative;
+  padding: 10px;
+  /* top: 50px; */
+  /* right: 0; */
+  z-index: 2;
+  width: 250px;
+  height: 200px;
+  max-height: 500px;
+  background: white;
+  border: 1px solid gray;
+  border-top: hidden;
+  overflow-y: scroll;
+}
+
+.cart-item {
+  margin: 5px;
+}
+
+.cart-item-remove {
+  background: rgba(255, 42, 42, 0.87);
+  margin-right: 10px;
+}
+
+.cart-item-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 200px;
+  margin: 5px;
+  padding: 5px;
+  border: 1px solid gray;
+}
+
+.cart-img {
+  width: auto;
+  height: 50px;
 }

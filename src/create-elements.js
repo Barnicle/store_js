@@ -27,17 +27,19 @@ export default function CreateElements(data) {
             <div class="d-flex justify-content-center">
               <h3 class="item-title card-title" id="title">${data[key].title}</h3>
             </div>
-            <div class="item-desc card-text d-flex justify-content-center" id="descr">
+            <div class="item-desc card-text d-flex flex-column justify-content-center" id="descr">
               <p>${data[key].descr}</p>
-            </div>
-            <div class="d-flex flex-row justify-content-between align-items-center">
               <div class="item-price-container d-flex flex-column justify-content-center">
                 <span class="item-price" id="price">${data[key].price}$</span>
               </div>
-              <form class="item-form">
-                <button class="cart-btn item-btn btn btn-primary" id="${
-                  data[key].id
-                }" type="submit">
+            </div>
+            <div class="d-flex flex-row justify-content-center align-items-center">
+
+              <form class="item-form d-flex flex-row align-items-center">
+                <span id='id${data[key].id}'>0</span>
+                <button class="cart-btn item-btn btn btn-primary"
+                 id="${data[key].id}" 
+                type="submit">
                   В Корзину
                 </button>
               </form>
@@ -45,5 +47,6 @@ export default function CreateElements(data) {
           </div>
         </div>`
     );
+
   return newHTML;
 }

@@ -7,3 +7,4 @@ export const prev = document.querySelector("#previous");
 export const first = document.querySelector("#first");
 export const last = document.querySelector("#last");
 export const list = document.querySelector("#list");
+export const addBtn = document.querySelectorAll("#id0");

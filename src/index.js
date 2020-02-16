@@ -2,8 +2,7 @@ import setArray from "./setArray.js";
 import Pagination from "./pagination.js";
 import "./style.css";
 import "./nav.css";
-import state from './state.js';
-
+import state from "./state.js";
 import {
   available,
   price_down,
@@ -13,7 +12,7 @@ import {
   prev,
   first,
   last
-} from './selectors.js'
+} from "./selectors.js";
 
 let currentPage = 1;
 let numberPerPage = 15;
@@ -31,5 +30,6 @@ const App = () => {
   prev.addEventListener("click", pagination.previousPage);
   first.addEventListener("click", pagination.firstPage);
   last.addEventListener("click", pagination.lastPage);
-}
+};
+
 window.onload = App;

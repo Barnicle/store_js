@@ -1,41 +1,30 @@
-import {
-  sortTitle,
-  sortobj
-} from "./sort";
-import state from './state.js'
-import {
-  available,
-  price_down,
-  price_up,
-  title_sort
-} from './selectors.js'
-
-
+import { sortTitle, sortobj } from "./sort";
+import state from "./state.js";
+import { available, price_down, price_up, title_sort } from "./selectors.js";
 
 export const handlePriceSort = (e, list) => {
-
   const element = document.getElementById(e.currentTarget.id);
-  if (e.currentTarget.classList.contains("active")) { //если кнопка уже была нажата
+  if (e.currentTarget.classList.contains("active")) {
+    //если кнопка уже была нажата
     e.currentTarget.classList.remove("active");
     sortobj(list, "id");
   } else {
     sortobj(list, "price");
 
-    if (e.currentTarget.id === "price_up") { //по возрастанию
+    if (e.currentTarget.id === "price_up") {
+      //по возрастанию
       resetActiveFilter(state);
       price_up.classList.add("active");
       state.price_sorted = "price_up";
-
-    } else if (e.currentTarget.id === "price_down") { //по убыванию
+    } else if (e.currentTarget.id === "price_down") {
+      //по убыванию
       resetActiveFilter(state);
       price_down.classList.add("active");
       list.reverse();
       state.price_sorted = "price_down";
     }
   }
-}
-
-
+};
 
 export function handleAvailableSort(list) {
   if (state.available_sorted === false) {
@@ -48,7 +37,6 @@ export function handleAvailableSort(list) {
     sortobj(list, "id");
     available.classList.remove("active");
   }
-
 }
 
 export function handleTitleSort(list) {
@@ -64,12 +52,10 @@ export function handleTitleSort(list) {
   }
 }
 
-
-
 function resetActiveFilter() {
   const active = document.querySelectorAll(".active");
   if (active.length != 0) {
-    active.forEach(function (el) {
+    active.forEach(function(el) {
       el.classList.remove("active");
     });
     if (state.price_sorted[1] === true) state.price_sorted[1] = false;
