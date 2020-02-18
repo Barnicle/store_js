@@ -1,5 +1,9 @@
+import state from "./state";
+
 export default function CreateElements(data) {
   let newHTML;
+  console.log(state.cartList === null);
+
   //if items in localstorage parse it
   if (localStorage.getItem("mykey") != null) newHTML = JSON.parse(localStorage.getItem("stage"));
   else
@@ -36,7 +40,7 @@ export default function CreateElements(data) {
             <div class="d-flex flex-row justify-content-center align-items-center">
 
               <form class="item-form d-flex flex-row align-items-center">
-                <span id='id${data[key].id}'>0</span>
+                <span class='disabled' id='id${data[key].id}'>0</span>
                 <button class="cart-btn item-btn btn btn-primary"
                  id="${data[key].id}" 
                 type="submit">
@@ -49,4 +53,7 @@ export default function CreateElements(data) {
     );
 
   return newHTML;
+}
+function checkInCart(data) {
+  if (data === null) return false;
 }

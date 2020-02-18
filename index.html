@@ -32,23 +32,20 @@
           <a class="nav-link" id="price_down" href="#">$ ↓</a>
         </li>
       </ul>
-
       <div class="navbar d-flex flex-row" id="cart">
         <div class="d-flex align-items-center">
-          <span id="cart-items-quantity">1</span>
+          <span id="cart-items-quantity"></span>
           <i class="material-icons">shopping_cart</i>
           <span>Cart</span>
-
         </div>
-
       </div>
-
     </div>
-                <div class="cart-contain d-flex flex-column justify-content-center align-items-center" id="cartList">
-          </div>
+    </div>
+
   </header>
-  <main class="card container-lg text-center">
-    <div class="card-body">
+  <main class="card text-center d-flex flex-row">
+
+    <div class="card-body d-flex flex-column">
       <div class="container-lg flex column">
         <div class="column" id="items_placeholder ">
           <div class="row" id="list">
@@ -62,8 +59,11 @@
       </div>
     </div>
     </div>
+            <div class="scrollable-container">
+            <div class="cart-contain d-flex flex-column justify-content-center align-items-center"id="cartList">
+         </div>
+         </div>
   </main>
-  <script type="text/javascript" src="./bundle.js" type="module"></script>
+<script type="text/javascript" src="./bundle.js" type="module"></script>
 </body>
-
 </html>
